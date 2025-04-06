@@ -14,16 +14,16 @@ TARGET_DIR="$INSTALL_DIR/$RAMA_DIR"
 mkdir -p "$TARGET_DIR"
 cd "$INSTALL_DIR"
 
-echo "📥 Downloading Rama $RAMA_VERSION from:"
+echo "Downloading Rama $RAMA_VERSION from:"
 echo "$RAMA_ZIP_URL"
 curl -LO "$RAMA_ZIP_URL"
 
-echo "📦 Unzipping into $TARGET_DIR..."
+echo "Unzipping into $TARGET_DIR..."
 unzip -q "$ZIP_FILE" -d "$TARGET_DIR"
 
-echo "🧹 Cleaning up zip file..."
+echo "Cleaning up zip file..."
 rm "$ZIP_FILE"
 
-echo "✅ Rama installed in: $TARGET_DIR"
-echo "👉 To try it out: cd $TARGET_DIR"
+echo "Rama installed in: $TARGET_DIR"
+echo "To try it out: cd $TARGET_DIR"
 
